@@ -2,6 +2,7 @@
  * Станции метро: http://www.metro.ru/stations/
  * Координаты метро получены с помощью Яндекс.Геокодер: http://api.yandex.ru/maps/doc/geocoder/desc/concepts/About.xml
  * Данные о пассажиропотоке: http://ru.wikipedia.org/wiki/Пассажиропоток_Московского_метрополитена
+ * За 2007 год: http://web.archive.org/web/20130618205307/http://ru.wikipedia.org/wiki/Пассажиропоток_Московского_метрополитена
  */
 window.Metro = {
     map: {},

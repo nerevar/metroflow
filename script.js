@@ -119,10 +119,14 @@ Metro.lines.init = function() {
                     // Координаты центра круга
                     [currStation.lat, currStation.long],
                     // Радиус круга в метрах
-                    400
+                    (+currStation.people / 200) || 100
                 ],
                 {
-                    hintContent: currStation.station
+                    hintContent: currStation.station +
+                    (+currStation.people
+                        ?  ', ' + Math.floor(+currStation.people / 1000) + 'k чел./сутки'
+                        : ''
+                    )
                 },
                 {
                     fillColor: lineData.color,
